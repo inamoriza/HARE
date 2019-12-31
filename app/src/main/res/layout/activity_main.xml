@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ARUCO Marker Detector "
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onCameraCalibrate"
+            android:text="CALIBRATE" />
+
+        <Button
+            android:id="@+id/setrgb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="COLOR" />
+
+        <Button
+            android:id="@+id/setgray"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GRAY" />
+    </LinearLayout>
+
+    <org.opencv.android.JavaCameraView
+        android:id="@+id/surface_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</TableRow>

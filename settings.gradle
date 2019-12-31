@@ -1,0 +1,2 @@
+include ':app', ':gradle-wrapper'
+rootProject.name='HARE'
